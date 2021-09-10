@@ -1,0 +1,272 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.navigation{
+    height: 70px;
+    width: 100%;
+    background-color:rgb(70, 3, 3);
+    display: flex;
+    /* flex-direction: column; */
+    /* align-items: center; */
+    justify-content: center;
+}
+/* Container css */
+.container{
+    width: 80%;
+    height: 70px;
+    /* background-color: red; */
+    display: flex;
+    justify-content: space-between;
+    
+}
+/* Logo css */
+.logo{
+    width: 20%;
+    height: 70px;
+    background-color: yellow;
+    display: flex;
+}
+/* Navigation css */
+.nav
+{
+    width: 35%;
+    height: 70px;
+    /* background-color: aqua; */
+    
+}
+
+.links
+{
+    display: flex;
+
+}
+.link
+{
+    list-style-type: none;
+    height: 70px;
+    width: 25%;
+    /* background-color:red; */
+    text-align: center;
+    line-height: 60px;
+    font-family: -apple-system, BlinkMacSystemFont, 
+    'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans',
+     'Helvetica Neue', sans-serif;
+    cursor: pointer;
+    color: antiquewhite;
+}
+.link:hover{
+    background-color: aqua;
+    color: black;
+}
+
+/* navigation css */
+.banner{
+    height: 750px;
+    width: 100%;
+    background-color: blue; 
+    background-image: url(./pics/chainsaw.png);
+    background-size: contain;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.banner-section{
+    height: 80px;
+    width: 27%;
+    background-color: #E2684D;
+    /* margin-left: 38%;
+    margin-top: 10%; */
+    display: flex;
+    font-size: 40px;
+    /* font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif; */
+    display: flex;
+    justify-content: center;
+    align-items:center ;
+}
+
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,900&display=swap'); */
+
+/* body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: black;
+  height: 100vh;
+  width: 100vw;
+} */
+
+span {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  display: block;
+  color: #cf1b1b;
+  font-size: 37px;
+  font-weight: bold;
+  letter-spacing: 6px;
+  cursor: pointer;
+  text-align: center;
+  margin-top: 120px;
+  margin-left: 3.4px;
+}
+
+/* span::before {
+  content: "CHAINSAW MAN";
+  position: absolute;
+  color: transparent;
+  background-image: repeating-linear-gradient(
+    45deg,
+    transparent 0,
+    transparent 2px,
+    rgb(27, 10, 10) 2px,
+    rgb(27, 10, 10) 4px
+  );
+  -webkit-background-clip: text;
+  top: 0px;
+  left: 0;
+  z-index: -1;
+  transition: 1s;
+} */
+
+span::after {
+  content: "CHAINSAW MAN";
+  position: absolute;
+  color: transparent;
+  background-image: repeating-linear-gradient(
+    135deg,
+    transparent 0,
+    transparent 2px,
+    black 2px,
+    black 4px
+  );
+  -webkit-background-clip: text;
+  top: 0px;
+  left: 0px;
+  transition: 1s;
+}
+
+span:hover:before {
+  top: 10px;
+  left: 10px;
+}
+
+span:hover:after {
+  top: -10px;
+  left: -10px;
+} 
+.btn{
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-top: 50px;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 10px;
+    background-color: #a80505;
+    color: white;
+    cursor: pointer;
+}
+.btn:hover{
+    background-color: #ce9999;
+}
+/* character css */
+.char{
+    padding-top: 30px;
+    padding-bottom: 50px;
+    background-color: aquamarine;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; x */
+    align-items: center;
+    
+}
+.charpic{
+    /* height: 50px; */
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 80%;
+    /* background-color: red; */
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.title{
+    font-size: 30px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.charcard{
+    width: 22%;
+    height: 300px;
+    background-color: yellow;
+    background-size: cover;
+    display: flex;
+    align-items: flex-end;
+    margin-bottom: 20px;
+}
+
+.char-detail{
+    height: 150px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    transition: .4s;
+}
+.char-detail:hover{
+    height: 300px;
+}
+.charname{
+    color: white;
+    font-family: 'Segoe UI';
+    font-size: 30px;
+
+}
+.padd{
+    padding: 20px;
+}
+.card1{
+    background-image: url(https://i.pinimg.com/originals/66/4e/55/664e5513e25f4103bb1dc6f01fbdb973.jpg);
+}
+.card2{
+    background-image: url(https://fsa.zobj.net/crop.php?r=LI-kGCvtyStWtNEAxRpc1TewfyKj3lLWAmQlCngMjmL5nn2-juZMxDe1bAqGpmoegbhsfx16QbXbsZ8vXodJaOynph5JqM81p8wrGwUnQThhcr7SdIYBfKV4KE7O-al7rlO2lqRaLHUqw4ni);
+}
+.card3{
+    background-image: url(https://c4.wallpaperflare.com/wallpaper/551/203/605/anime-anime-girls-power-chainsaw-man-drid-hd-wallpaper-preview.jpg);
+}
+.card4{
+    background-image: url(https://i.pinimg.com/originals/51/0f/b0/510fb019e2f3dc17da903ff1882cc03a.jpg);
+}
+.card5{
+    background-image: url(https://i.redd.it/ko6te8qs0du41.jpg);
+}
+.card6{
+    background-image: url(https://cdn.donmai.us/original/6f/99/__kishibe_chainsaw_man_drawn_by_nazgul_5511474__6f99ea23a5bbee6f852e31ac42b626d9.jpg);
+}
+.card7{
+    background-image: url(https://i.pinimg.com/564x/c6/01/aa/c601aa0a335e9cb0c31e4d0d182ba105.jpg);
+}
+.card8{
+    background-image: url(https://64.media.tumblr.com/bbc96b902291859104a40f1c6da237e4/09c851f8cdfc1c59-cb/s1280x1920/6e4aa7daff62fa06dc89d6330ec882af6881f313.jpg);
+}
+.btnn{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 20px;
+    background-color: #a80505;
+    color: white;
+    cursor: pointer;
+}
+.btnn:hover{
+    background-color: #ce9999;
+}
